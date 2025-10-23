@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SureLife Insurance Ltd Insurance</title>
+  <meta name="description" content="SureLife Insurance Ltd Insurance — Your future, our priority. Life, Car, Health, Home & Business insurance in Nairobi, Kenya." />
+  <style>
+    :root{
+      --primary:#0b63a5; /* corporate blue */
+      --accent:#057a9d;
+      --muted:#6b7280;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --radius:12px;
+      --glass: rgba(255,255,255,0.6);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#fbfdff 0%, #f1f7fb 100%);color:#0b1720;min-height:100vh}
+    header{backdrop-filter:blur(6px);position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.6);border-bottom:1px solid rgba(11,99,165,0.06)}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:10px;background:var(--primary);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .cta{background:var(--primary);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:48px 0}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{margin:0 0 18px;color:var(--muted)}
+    .hero .actions{display:flex;gap:12px}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 20px rgba(8,13,20,0.05)}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .feature{padding:14px;border-radius:10px;border:1px solid rgba(11,99,165,0.06);display:flex;gap:12px;align-items:center}
+    .icon{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+
+    /* sections */
+    section{padding:42px 0}
+    h2{margin:0 0 14px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:linear-gradient(180deg,#ffffff,#fbfdff);padding:18px;border-radius:12px;border:1px solid rgba(11,99,165,0.05)}
+    .service h3{margin:0 0 6px}
+    .service p{color:var(--muted);margin:0}
+
+    .about{display:flex;gap:18px;align-items:center}
+    .about p{color:var(--muted)}
+
+    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .testimonial{padding:14px;border-radius:10px;background:linear-gradient(180deg,#fff,#fcfeff);border:1px solid rgba(6,8,10,0.03)}
+
+    /* contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 360px;gap:18px}
+    label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef6;background:#fff}
+    button.btn{background:var(--primary);color:#fff;padding:12px 16px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+
+    footer{padding:24px 0;border-top:1px solid rgba(11,99,165,0.06);color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .services,.testimonials{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+    }
+    @media (max-width:520px){
+      .features{grid-template-columns:1fr}
+      .service{padding:12px}
+      .nav a{display:none}
+    }
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(11,99,165,0.08);color:var(--primary);font-weight:700}
+    .tiny{font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">SL</div>
+        <div>
+          <div style="font-weight:800">SureLife Insurance Ltd</div>
+          <div class="tiny muted">Your future, our priority</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px">
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="cta" href="#contact">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Insurance that keeps you moving forward</h1>
+        <p>SureLife Insurance Ltd offers reliable, affordable insurance cover in Nairobi — Life, Health, Motor, Home and Business plans tailored to your needs.</p>
+        <div class="actions">
+          <a class="cta" href="#contact">Get a free quote</a>
+          <a href="mailto:kariukisam300@gmail.com" style="padding:10px 16px;border-radius:10px;border:1px solid rgba(11,99,165,0.08);text-decoration:none;font-weight:700">Email us</a>
+        </div>
+
+        <div class="card features" style="margin-top:18px">
+          <div class="feature"><div class="icon">L</div><div><strong>Life Plans</strong><div class="tiny muted">Family protection & savings</div></div></div>
+          <div class="feature"><div class="icon">C</div><div><strong>Car & Motor</strong><div class="tiny muted">Third-party & comprehensive</div></div></div>
+          <div class="feature"><div class="icon">H</div><div><strong>Health</strong><div class="tiny muted">Individual & group health cover</div></div></div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 style="margin-top:0">Quick contact</h3>
+          <p class="muted tiny">Call or WhatsApp</p>
+          <div style="font-weight:800;font-size:18px">+254 742 627 929</div>
+          <div style="margin-top:12px;color:var(--muted)">Email: <a href="mailto:kariukisam300@gmail.com">kariukisam300@gmail.com</a></div>
+          <div style="margin-top:18px">
+            <a class="btn" href="https://wa.me/254742627929" target="_blank" rel="noopener">Message on WhatsApp</a>
+          </div>
+          <hr style="margin:14px 0;border:none;border-top:1px solid rgba(6,8,10,0.04)" />
+          <div class="tiny muted">Office</div>
+          <div style="font-weight:700">Nairobi, Kenya</div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h4 style="margin:0 0 8px">Get a quick quote</h4>
+          <form id="quickQuote">
+            <label class="tiny muted">Name</label>
+            <input type="text" id="qName" placeholder="Your name" required />
+            <label class="tiny muted" style="margin-top:8px">Type of cover</label>
+            <select id="qType"><option>Life Insurance</option><option>Car Insurance</option><option>Health Insurance</option><option>Home Insurance</option><option>Business Insurance</option></select>
+            <label class="tiny muted" style="margin-top:8px">Phone</label>
+            <input type="text" id="qPhone" placeholder="07..." />
+            <div style="display:flex;gap:8px;margin-top:12px">
+              <button type="button" class="btn" onclick="sendQuote()">Request</button>
+              <button type="reset" style="padding:10px 12px;border-radius:8px;border:1px solid rgba(6,8,10,0.06);background:transparent">Clear</button>
+            </div>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <p class="muted">Comprehensive insurance products designed for individuals and businesses.</p>
+      <div class="services" style="margin-top:14px">
+        <div class="service">
+          <h3>Life Insurance</h3>
+          <p>Protect your family with term & whole life options plus savings-linked plans.</p>
+        </div>
+        <div class="service">
+          <h3>Car & Motor Insurance</h3>
+          <p>Comprehensive, third-party fire & theft, and third-party cover with quick claims handling.</p>
+        </div>
+        <div class="service">
+          <h3>Health Insurance</h3>
+          <p>Individual and group medical plans with flexible hospital networks.</p>
+        </div>
+
+        <div class="service">
+          <h3>Home Insurance</h3>
+          <p>Cover for your home structure, contents and liability protection.</p>
+        </div>
+        <div class="service">
+          <h3>Business Insurance</h3>
+          <p>Cover for property, liability, employee benefits and business interruption.</p>
+        </div>
+        <div class="service">
+          <h3>Risk Assessment</h3>
+          <p>Professional risk surveys to tailor cover and reduce premiums.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About SureLife Insurance Ltd</h2>
+      <div class="about">
+        <div style="flex:1">
+          <p class="muted">SureLife Insurance Ltd is a Nairobi-based insurance provider committed to protecting families and businesses across Kenya. We combine fast claims service with flexible plans and local expertise.</p>
+          <ul class="tiny muted">
+            <li>Local presence in Nairobi</li>
+            <li>Licensed & regulated</li>
+            <li>Fast, personal claims handling</li>
+          </ul>
+        </div>
+        <div style="width:320px">
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="office" style="width:100%;border-radius:10px;object-fit:cover;height:180px" />
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>What our customers say</h2>
+      <div class="testimonials" style="margin-top:14px">
+        <div class="testimonial">
+          <strong>Grace M.</strong>
+          <p class="tiny muted">"Quick claim process and very helpful staff — I felt supported when my car was damaged."</p>
+        </div>
+        <div class="testimonial">
+          <strong>Joseph K.</strong>
+          <p class="tiny muted">"Affordable family cover and straightforward payments. Recommended."</p>
+        </div>
+        <div class="testimonial">
+          <strong>Mary A.</strong>
+          <p class="tiny muted">"Professional risk assessment saved us money on premiums for our small business."</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p class="muted">Reach out for quotes, claims or general inquiries. Office: Nairobi, Kenya</p>
+
+      <div class="contact-grid" style="margin-top:14px">
+        <div>
+          <form id="contactForm" onsubmit="return sendContact(event)">
+            <label for="name">Full name</label>
+            <input id="name" required />
+
+            <label for="email" style="margin-top:10px">Email</label>
+            <input id="email" type="email" value="kariukisam300@gmail.com" />
+
+            <label style="margin-top:10px">Phone</label>
+            <input id="phone" value="0742627929" />
+
+            <label style="margin-top:10px">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us what cover you need..."></textarea>
+
+            <div style="display:flex;gap:10px;margin-top:12px">
+              <button class="btn" type="submit">Send message</button>
+              <button type="button" onclick="window.open('https://wa.me/254742627929','_blank')" style="padding:12px;border-radius:10px;border:1px solid rgba(6,8,10,0.06);background:transparent">Chat on WhatsApp</button>
+            </div>
+          </form>
+
+          <div id="contactResult" style="margin-top:12px;color:var(--muted)"></div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h4 style="margin:0 0 8px">Contact details</h4>
+            <div class="tiny muted">Phone</div>
+            <div style="font-weight:800">0742627929</div>
+            <div class="tiny muted" style="margin-top:8px">Email</div>
+            <div style="font-weight:700"><a href="mailto:kariukisam300@gmail.com">kariukisam300@gmail.com</a></div>
+            <div class="tiny muted" style="margin-top:8px">Address</div>
+            <div style="font-weight:700">Nairobi, Kenya</div>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4 style="margin:0 0 8px">Business hours</h4>
+            <div class="tiny muted">Mon - Fri</div>
+            <div style="font-weight:700">08:00 — 17:00</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <div style="font-weight:800">SureLife Insurance Ltd</div>
+        <div class="tiny muted">Nairobi, Kenya • Phone: 0742627929 • <a href="mailto:kariukisam300@gmail.com">kariukisam300@gmail.com</a></div>
+      </div>
+      <div class="muted tiny">© " + new Date().getFullYear() + " SureLife Insurance Ltd. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Small helpers
+    function sendQuote(){
+      const name = document.getElementById('qName').value || 'Client';
+      const type = document.getElementById('qType').value;
+      const phone = document.getElementById('qPhone').value || '0742627929';
+      const text = `Hi, my name is ${name}. I would like a quote for ${type}. My phone: ${phone}`;
+      const wa = 'https://wa.me/254742627929?text=' + encodeURIComponent(text);
+      window.open(wa,'_blank');
+    }
+
+    function sendContact(e){
+      if(e) e.preventDefault();
+      const name = document.getElementById('name').value || '';
+      const email = document.getElementById('email').value || 'kariukisam300@gmail.com';
+      const phone = document.getElementById('phone').value || '0742627929';
+      const message = document.getElementById('message').value || 'Please contact me';
+      const subject = encodeURIComponent('Website inquiry from ' + name);
+      const body = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+      // open default mail client as fallback
+      const mailto = `mailto:kariukisam300@gmail.com?subject=${subject}&body=${body}`;
+      // also show result message
+      const result = document.getElementById('contactResult');
+      result.innerText = 'Opening your mail app — if nothing opens, please email kariukisam300@gmail.com or WhatsApp +254742627929';
+      window.location.href = mailto;
+      return false;
+    }
+
+    // footer year fix (since we used inline new Date earlier in string)
+    (function(){
+      const footer = document.querySelector('footer .container div:last-child');
+      if(footer) footer.innerHTML = '© ' + new Date().getFullYear() + ' SureLife Insurance Ltd. All rights reserved.';
+    })();
+  </script>
+</body>
+</html>
